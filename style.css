@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 800px){
+    .main-container>div{
+        min-height: 400px;
+    }
+    .content1{
+        flex: 100%;
+    }
+    .header{
+        min-height: 90px;
+    }
+    .footer{
+        min-height: 110px;
+    }
+}
+@media screen and (max-width: 520px){
+    .content2>div{
+        flex-direction: column;
+    }
+    .content2>div>div{
+        min-height: 200px;
+    }
+}
+body{
+    background: linear-gradient(to bottom, #2B076E, #371B58, #4E0A77, #380036);
+    color: white;
+}
+.wrapper{
+    min-height: 100vh;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.header,.footer{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    border: 5px solid linear-gradient(to right, #2B076E, #371B58, #4E0A77, #380036);;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    font-weight: bold;
+}
+.content1,.content2>div>div{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: left;
+    box-shadow: 5px 2px 4px 1px rgba(56, 54, 54, 0.596);
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px; 
+} 
+.content1{
+    background: url(/Original\ post-inst_\ vspec_r34.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    overflow: hidden;
+}
+.box-1{
+    background: url(/NSX1.jpg) no-repeat center;
+    background-size: cover;
+}
+.box-2{
+    background: url(/evo6.jpg) no-repeat center center;
+    background-size: cover;
+}
+.box-3{
+    background: url(/rx-7.jpg) no-repeat center center;
+    background-size: cover;
+}
+.box-4{
+    background: url(/supra.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.main-container{
+    flex: 6;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px
+}
+.content2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.content2>div{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
