@@ -61,6 +61,11 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px; 
 } 
+img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .content1{
     background: url(./Original\ post-inst_\ vspec_r34.jpg) no-repeat center center;
     background-size: cover;
